@@ -1,12 +1,75 @@
-# React + Vite
+# Securelytix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based web app with animated UI and 3D particle background. Deployed on Vercel.
+---
+## 🔗 Live Demo
 
-Currently, two official plugins are available:
+👉 https://securelytix.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> ⚠️ Note: If you're using React Router and refreshing non-root routes (like `/dashboard`), make sure to include `vercel.json` with SPA rewrite config.
+---
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+/securelytix
+├── /src
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   ├── /pages
+│   │   ├── LoginPage.jsx
+│   │   └── Dashboard.jsx
+│   ├── /data
+│   │   └── mockData.jsx
+│   ├── /routes
+│   │   └── AppRoutes.jsx
+│   ├── /components
+│   │   ├── DropDownDetailsCard.jsx
+│   │   └── GalaxyBackground.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Setup Instructions
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/Rishiraghuvanshicet/securelytix.git
+cd securelytix
+```
+
+2. Install Dependencies
+
+```bash
+npm install
+Run the Development Server
+```
+3. Run the Development Server
+
+```bash
+npm run dev
+```
+
+4.Build for Production
+
+```bash
+npm run build
+```
+
+🌐 Deployment
+✅ Frontend
+Deployed on Vercel
+
+To support React Router, use this vercel.json in the root directory:
+
+🛠️ Built With
+React.js
+Vite
+Material UI
+React Icons
+
+
+🔐 Demo Credentials
+You can use any valid email format and a password that meets basic requirements (minimum 8 characters):
+
+Email: anything@securelytix.com
+Password: user12345
