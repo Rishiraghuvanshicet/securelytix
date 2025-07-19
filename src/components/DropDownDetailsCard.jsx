@@ -1,17 +1,21 @@
+// src/components/DropdownDetailsCard.jsx
 import React from "react";
 import { Card, CardContent, Typography } from "@mui/material";
 
-const DropdownDetailsCard = ({ data, type }) => {
-  if (!data) return null;
+const DropdownDetailsCard = ({ title, details }) => {
+  if (!details) return null;
 
   return (
-    <Card sx={{ mt: 2, bgcolor: "#1a1a1a", color: "#00f2ff" }}>
+    <Card sx={{ backgroundColor: "#1e1e1e", color: "white", mt: 2, border: "1px solid #00f0ff", boxShadow: "0 0 10px #00f0ff", borderRadius: 2 }}>
       <CardContent>
-        <Typography variant="h6">{type === "client" ? "Client" : "Employee"} Details</Typography>
-        <Typography>Name: {data.name}</Typography>
-        {data.role && <Typography>Role: {data.role}</Typography>}
-        {data.industry && <Typography>Industry: {data.industry}</Typography>}
-        <Typography>Contact: {data.contact}</Typography>
+        <Typography variant="h6" sx={{ color: "#00f0ff", mb: 1 }}>
+          {title} Details
+        </Typography>
+        {Object.entries(details).map(([key, value]) => (
+          <Typography key={key} sx={{ textTransform: "capitalize", mb: 0.5 }}>
+            <strong>{key}:</strong> {value}
+          </Typography>
+        ))}
       </CardContent>
     </Card>
   );

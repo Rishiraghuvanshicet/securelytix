@@ -9,7 +9,7 @@ import {
   Box,
 } from "@mui/material";
 import { clients, employees } from "../data/mockData";
-import DropdownDetailsCard from "../components/DropdownDetailsCard";
+import DropdownDetailsCard from "../components/DropDownDetailsCard";  
 
 const Dashboard = () => {
   const [selectedClient, setSelectedClient] = useState(null);
