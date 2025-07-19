@@ -9,7 +9,7 @@ import {
   Box,
 } from "@mui/material";
 import { clients, employees } from "../data/mockData";
-import DropdownDetailsCard from "../components/DropDownDetailsCard";  
+import DropDownDetailsCard from "../components/DropDownDetailsCard";  
 
 const Dashboard = () => {
   const [selectedClient, setSelectedClient] = useState(null);
@@ -56,7 +56,7 @@ const Dashboard = () => {
             ))}
           </Select>
         </FormControl>
-        <DropdownDetailsCard data={selectedClient} type="client" />
+        <DropDownDetailsCard data={selectedClient} type="client" />
 
         {/* Employee Dropdown */}
         <FormControl fullWidth sx={{ mt: 4 }} variant="outlined">
@@ -86,7 +86,7 @@ const Dashboard = () => {
             ))}
           </Select>
         </FormControl>
-        <DropdownDetailsCard data={selectedEmployee} type="employee" />
+        <DropDownDetailsCard data={selectedEmployee} type="employee" />
       </Container>
     </Box>
   );
